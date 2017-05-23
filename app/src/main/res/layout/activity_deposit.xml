@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DepositActivity" >
+
+    <Button
+        android:id="@+id/verify"
+        android:onClick="verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify ID"
+        android:layout_alignTop="@+id/kitambulisho"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="92dp" />
+
+    <EditText
+        android:id="@+id/kitambulisho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Type customers ID Number here..."
+        android:inputType="number"
+        android:maxLines="1"
+        android:layout_marginTop="76dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/Customer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/verify"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:text="Customer Care" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Customer"
+        android:layout_centerHorizontal="true"
+        android:text="Area Police On Duty" />
+
+</RelativeLayout>
