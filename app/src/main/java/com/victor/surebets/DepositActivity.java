@@ -7,6 +7,7 @@ import com.loopj.android.http.RequestParams;
 import com.loopj.android.http.TextHttpResponseHandler;
 import com.squareup.picasso.Picasso;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -37,7 +38,7 @@ public class DepositActivity extends Activity {
     private static final String TAG ="SUREBET" ;
     EditText kitambulisho;
     Button verify;
-
+    ProgressDialog dialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
